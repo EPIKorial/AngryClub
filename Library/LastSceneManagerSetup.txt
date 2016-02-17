@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/angryClubTest.unity
+  isLoaded: 1
+  isActive: 1
