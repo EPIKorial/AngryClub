@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{96A05C39-65A9-4057-1900-68EE8B9580BD}</ProjectGuid>
+    <ProjectGuid>{471D1161-C185-7AD7-DCD1-C8AF829E3AA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugin\CodingClubAPI\CodingClub.cs" />
      <Compile Include="Assets\Scripts\DestuManager.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using CodingClubAPI;
 
 public class DestuManager : MonoBehaviour {
 
@@ -10,12 +11,7 @@ public class DestuManager : MonoBehaviour {
     {
         if (coll.gameObject.tag != "ground")
         {
-            //Debug.Log(this.gameObject.name + "got hit by " + coll.gameObject.name + " and the force was : " + coll.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude.ToString() + " / " + seuilDegats.ToString());
-            if (coll.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > seuilDegats)
-            {
-                GameObject.Find("PlayerBird").GetComponent<PlayerController>()._score += points;
-                Destroy(this.gameObject);
-            }
+            CodingClub.Destroy_on_collision(this.gameObject, coll, seuilDegats, points);
         }
     }
 }
